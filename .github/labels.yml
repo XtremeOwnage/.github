@@ -3,7 +3,12 @@
   description: 'Issues or pull requests related to dependencies.'
   aliases:
     - dependencies
+    
+- name: area/workflow
+  color: 'E99695'
+  description: 'Issues or pull requests related to workflows or CI/CD.'
 
+    
 - name: good first issue
   color: '333333'
   description: 'Issues that are good entry points for newcomers.'
