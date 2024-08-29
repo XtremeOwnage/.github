@@ -1,0 +1,115 @@
+- name: area/dependency
+  color: 'E99695'
+  description: 'Issues or pull requests related to dependencies.'
+
+- name: enhancement
+  color: '111111'
+  description: 'Requests for improvements or enhancements to existing features.'
+
+- name: New feature or request
+  color: '222222'
+  description: 'Requests for new features or functionalities.'
+
+- name: good first issue
+  color: '333333'
+  description: 'Issues that are good entry points for newcomers.'
+
+- name: Good for newcomers
+  color: '444444'
+  description: 'Issues that are suitable for new contributors to start with.'
+
+- name: help wanted
+  color: '555555'
+  description: 'Issues where the maintainers need additional help or input.'
+
+- name: Extra attention is needed
+  color: '666666'
+  description: 'Issues that require extra attention from the community or maintainers.'
+
+- name: kind/bug
+  color: 'B22222'  # Dark red for bugs
+  description: 'Issues where something is not working as intended.'
+
+- name: kind/cleanup
+  color: '006B75'
+  description: 'Tasks related to cleaning up code, processes, or technical debt.'
+
+- name: kind/deprecation
+  color: '006B75'
+  description: 'Features or enhancements that are marked for future deprecation.'
+
+- name: kind/documentation
+  color: '006B75'
+  description: 'Improvements or additions to project documentation.'
+
+- name: kind/feature
+  color: '006B75'
+  description: 'Issues or pull requests related to new features.'
+
+- name: kind/support
+  color: '006B75'
+  description: 'Issues or pull requests related to support questions.'
+
+- name: lifecycle/active
+  color: '28A745'  # Green for active
+  description: 'Issues or pull requests that are currently being actively worked on.'
+
+- name: lifecycle/frozen
+  color: 'FBCA04'
+  description: 'Issues or pull requests that should not be auto-closed due to inactivity.'
+
+- name: lifecycle/rotten
+  color: 'FBCA04'
+  description: 'Issues or pull requests that have been stale for an extended period and are eligible for auto-closure.'
+
+- name: lifecycle/stale
+  color: 'FBCA04'
+  description: 'Issues or pull requests that have become inactive and need attention.'
+
+- name: needs-kind
+  color: 'FFFFFF'  # White for needs-kind
+  description: 'Indicates a pull request or issue lacks a specific `kind` label and requires one.'
+
+- name: needs-triage
+  color: 'FFFFFF'  # White for needs-triage
+  description: 'Indicates a pull request or issue lacks a specific `triage` label and requires one.'
+
+- name: priority/awaiting-more-evidence
+  color: 'D93F0B'
+  description: 'Lowest priority. Needs more evidence before further action.'
+
+- name: priority/backlog
+  color: 'D93F0B'
+  description: 'Feature or issue planned for future implementation.'
+
+- name: priority/important
+  color: 'D93F0B'
+  description: 'Issues or features that are important and need attention soon.'
+
+- name: priority/urgent
+  color: 'FF0000'  # Red for urgent
+  description: 'Issues or features that require immediate resolution.'
+
+- name: triage/accepted
+  color: '28A745'  # Green for accepted
+  description: 'Issues or pull requests that are accepted and being worked on.'
+
+- name: triage/duplicate
+  color: '5319E7'
+  description: 'Indicates that this issue or pull request is a duplicate of an existing one.'
+
+- name: triage/needs-information
+  color: '5319E7'
+  description: 'Issues or pull requests that require additional information to proceed.'
+
+- name: triage/non-reproducible
+  color: '5319E7'
+  description: 'Issues that cannot be reproduced and need further investigation.'
+
+- name: triage/unresolved
+  color: '5319E7'
+  description: 'Issues that cannot be resolved or will not be resolved.'
+
+- name: wontfix
+  color: 'cccccc'
+  description: 'Indicates that this issue or pull request will not be worked on.'
