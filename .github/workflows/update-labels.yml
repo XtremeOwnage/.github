@@ -10,7 +10,11 @@ on:
         required: false
         default: false
         type: boolean
-        
+      delete-other:
+        description: "Should labels not defined in configuration be deleted?"
+        required: false
+        default: true
+        type: boolean      
 jobs:
   sync:
     name: Sync Labels
@@ -25,3 +29,6 @@ jobs:
         
         # If you want the action just to show you the preview of the changes, without actually editing the labels, set this to true
         dry-run: ${{ inputs.dry-run }}
+
+        # This, will delete other lables not defined.
+        delete-other-labels: ${{ inputs.delete-other }}
