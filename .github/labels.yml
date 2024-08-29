@@ -82,7 +82,13 @@
 - name: kind/feature
   color: '006B75'
   description: 'Issues or pull requests related to new features.'
-
+  
+- name: kind/localization
+  color: '006B75'
+  description: 'Improvements or additions related to localization'
+  aliases:
+    - localization
+    
 - name: kind/support
   color: '006B75'
   description: 'Issues or pull requests related to support questions.'
