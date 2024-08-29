@@ -118,8 +118,10 @@
 
 - name: triage/unresolved
   color: '5319E7'
-  description: 'Issues that cannot be resolved or will not be resolved.'
+  description: 'Issues that cannot be resolved.'
 
-- name: wontfix
-  color: 'cccccc'
+- name: triage/wont-fix
+  color: '5319E7'
   description: 'Indicates that this issue or pull request will not be worked on.'
+  aliases:
+    - wontfix
