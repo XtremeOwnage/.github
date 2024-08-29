@@ -8,6 +8,17 @@
   color: 'E99695'
   description: 'Issues or pull requests related to workflows or CI/CD.'
 
+- name: area/deployment/docker-compose
+  color: 'E99695'
+  description: 'Issues or pull requests related to docker-compose deployments'
+
+- name: area/deployment/kubernetes
+  color: 'E99695'
+  description: 'Issues related to kubernetes manifests (not helm!)'
+  
+- name: area/deployment/helm
+  color: 'E99695'
+  description: 'Issues or pull requests related to helm deployments'
     
 - name: good first issue
   color: '333333'
