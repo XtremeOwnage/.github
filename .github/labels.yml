@@ -1,3 +1,6 @@
+###################################################################################################################################
+###### Area - Designates which are of functionality is impacted.
+###################################################################################################################################
 - name: area/dependency
   color: 'E99695'
   description: 'Issues or pull requests related to dependencies.'
@@ -28,6 +31,14 @@
   color: '555555'
   description: 'Issues where the maintainers need additional help or input.'
 
+###################################################################################################################################
+###### Kind - Indicates what "kind" of issue/PR this is. Aka, feature, bug, cleanup, documentation, etc...
+###################################################################################################################################
+
+- name: needs-kind
+  color: 'FFFFFF'  # White for needs-kind
+  description: 'Indicates a pull request or issue lacks a specific `kind` label and requires one.'
+  
 - name: kind/bug
   color: 'B22222'  # Dark red for bugs
   description: 'Issues where something is not working as intended.'
@@ -58,6 +69,15 @@
   aliases:
     - question
 
+###################################################################################################################################
+###### Lifecycle / State - This is the current state of an issue. Active, Stale, Frozen, Rotten.
+###### Flow: new -> active -> stale -> rotten -> auto-closed.
+###### Add lifecycle/frozen, to disable automatic lifecycle.
+###################################################################################################################################
+- name: lifecycle/new
+  color: '28A745'  # Green for active
+  description: 'Issues or pull requests that are currently being actively worked on.'
+  
 - name: lifecycle/active
   color: '28A745'  # Green for active
   description: 'Issues or pull requests that are currently being actively worked on.'
@@ -73,31 +93,52 @@
 - name: lifecycle/stale
   color: 'FBCA04'
   description: 'Issues or pull requests that have become inactive and need attention.'
+  
+###################################################################################################################################
+###### Priority, Indicates the priority of a particular issue or PR.
+###### New / Un-triaged tickets will be needs-priority.
+###### Order: unplanned -> low -> normal -> high -> urgent
+###################################################################################################################################
 
-- name: needs-kind
-  color: 'FFFFFF'  # White for needs-kind
-  description: 'Indicates a pull request or issue lacks a specific `kind` label and requires one.'
-
-- name: needs-triage
+- name: needs-priority
   color: 'FFFFFF'  # White for needs-triage
   description: 'Indicates a pull request or issue lacks a specific `triage` label and requires one.'
+  aliases:
+    - priority/awaiting-more-evidence
 
-- name: priority/awaiting-more-evidence
+- name: priority/unplanned
   color: 'D93F0B'
-  description: 'Lowest priority. Needs more evidence before further action.'
-
-- name: priority/backlog
+  description: 'Feature or issue deemed valid, however, not currently planned.'
+  
+- name: priority/low
+  color: 'D93F0B'
+  description: 'Low priority'
+  
+- name: priority/normal
   color: 'D93F0B'
   description: 'Feature or issue planned for future implementation.'
-
-- name: priority/important
+  aliases:
+    - priority/backlog
+    
+- name: priority/high
   color: 'D93F0B'
   description: 'Issues or features that are important and need attention soon.'
-
+  aliases:
+    - priority/important
+    
 - name: priority/urgent
   color: 'FF0000'  # Red for urgent
   description: 'Issues or features that require immediate resolution.'
 
+###################################################################################################################################
+###### Triage - This is used to categorize incoming tickets, to determine validity.
+###### New / Un-triaged tickets will be set to needs-triage
+###################################################################################################################################
+
+- name: needs-triage
+  color: 'FFFFFF'  # White for needs-triage
+  description: 'Indicates a pull request or issue lacks a specific `triage` label and requires one.'
+  
 - name: triage/accepted
   color: '28A745'  # Green for accepted
   description: 'Issues or pull requests that are accepted and being worked on.'
