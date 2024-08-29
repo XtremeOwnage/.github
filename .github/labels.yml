@@ -1,34 +1,22 @@
 - name: area/dependency
   color: 'E99695'
   description: 'Issues or pull requests related to dependencies.'
-
-- name: enhancement
-  color: '111111'
-  description: 'Requests for improvements or enhancements to existing features.'
-
-- name: New feature or request
-  color: '222222'
-  description: 'Requests for new features or functionalities.'
+  aliases:
+    - dependencies
 
 - name: good first issue
   color: '333333'
   description: 'Issues that are good entry points for newcomers.'
 
-- name: Good for newcomers
-  color: '444444'
-  description: 'Issues that are suitable for new contributors to start with.'
-
 - name: help wanted
   color: '555555'
   description: 'Issues where the maintainers need additional help or input.'
 
-- name: Extra attention is needed
-  color: '666666'
-  description: 'Issues that require extra attention from the community or maintainers.'
-
 - name: kind/bug
   color: 'B22222'  # Dark red for bugs
   description: 'Issues where something is not working as intended.'
+  aliases:
+    - bug
 
 - name: kind/cleanup
   color: '006B75'
@@ -41,6 +29,8 @@
 - name: kind/documentation
   color: '006B75'
   description: 'Improvements or additions to project documentation.'
+  aliases:
+    - documentation
 
 - name: kind/feature
   color: '006B75'
@@ -49,6 +39,8 @@
 - name: kind/support
   color: '006B75'
   description: 'Issues or pull requests related to support questions.'
+  aliases:
+    - question
 
 - name: lifecycle/active
   color: '28A745'  # Green for active
@@ -60,7 +52,7 @@
 
 - name: lifecycle/rotten
   color: 'FBCA04'
-  description: 'Issues or pull requests that have been stale for an extended period and are eligible for auto-closure.'
+  description: 'Issues eligable for auto-closure due to extended inactivity.'
 
 - name: lifecycle/stale
   color: 'FBCA04'
@@ -97,6 +89,8 @@
 - name: triage/duplicate
   color: '5319E7'
   description: 'Indicates that this issue or pull request is a duplicate of an existing one.'
+  aliases:
+    - duplicate
 
 - name: triage/needs-information
   color: '5319E7'
