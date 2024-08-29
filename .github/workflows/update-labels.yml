@@ -1,0 +1,27 @@
+name: Update Local Labels
+on:
+  push:
+    paths: 
+    - '.github/labels.yml'
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: "Should a dry-run be performed? Will not perform any changes."
+        required: false
+        default: false
+        type: boolean
+        
+jobs:
+  sync:
+    name: Sync Labels
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: actions/checkout@v2
+    - uses: EndBug/label-sync@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        config-file: .github/labels.yml
+        
+        # If you want the action just to show you the preview of the changes, without actually editing the labels, set this to true
+        dry-run: ${{ inputs.dry-run }}
